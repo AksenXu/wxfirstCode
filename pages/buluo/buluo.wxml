@@ -1,0 +1,5 @@
+<view class="container">
+<view class="top_bar">
+        <image style="width: 400px; height: 200px; background-color: #eeeeee;" src="{{src}}"></image>
+      </view>
+</view>

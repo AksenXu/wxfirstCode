@@ -1,0 +1,43 @@
+{
+    "pages": [
+        "pages/buluo/buluo",
+        "pages/index/index",
+        "pages/search/search",
+        "pages/faqi/faqi",
+        "pages/me/me",
+        "pages/logs/logs"
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "三分二运动",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "部落",
+                "iconPath": "res/icon_tansuo.png",
+                "selectedIconPath": "res/icon_tansuo_select.png"
+            },
+            {
+                "pagePath": "pages/buluo/buluo",
+                "text": "部落",
+                "iconPath": "res/icon_buluo.png",
+                "selectedIconPath": "res/icon_buluo_select.png"
+            },
+            {
+                "pagePath": "pages/faqi/faqi",
+                "text": "发起",
+                "iconPath": "res/icon_faqi.png",
+                "selectedIconPath": "res/icon_faqi_select.png"
+            },
+            {
+                "pagePath": "pages/me/me",
+                "text": "我的",
+                "iconPath": "res/icon_wode.png",
+                "selectedIconPath": "res/icon_wode_select.png"
+            }
+        ]
+    }
+}
