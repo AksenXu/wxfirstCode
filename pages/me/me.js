@@ -5,7 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    me_content: [
+      {
+        content_logo: "",
+        content_name: "我的钱包"
+      },
+      {
+        content_logo: "",
+        content_name: "我的收藏"
+      }, 
+      {
+        content_logo: "",
+        content_name: "常见问题"
+      },    
+      {
+        content_logo: "",
+        content_name: "联系客服"
+      }
+      ]
   },
 
   /**

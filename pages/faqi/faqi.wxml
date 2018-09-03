@@ -1,2 +1,8 @@
 <!--pages/faqi/faqi.wxml-->
-<text>pages/faqi/faqi.wxml</text>
+<view>
+共发起了活动 {{faqi_num}}次
+共参与了活动 {{canyu_num}}次
+
+<button bindtap='release_activity_tap'> 发布活动</button>
+<button bindtap='signup_activity_tap'> 报名记录</button>
+</view>

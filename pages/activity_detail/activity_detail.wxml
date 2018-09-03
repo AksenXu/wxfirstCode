@@ -1,0 +1,3 @@
+<!--pages/activity_detail/activity_detail.wxml-->
+<text>pages/activity_detail/activity_detail.wxml</text>
+<button bindtap='backBtn'>返回 {{type}}</button>

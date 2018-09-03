@@ -1,11 +1,15 @@
 {
     "pages": [
+        "pages/me/me",
+        "pages/faqi/faqi",
         "pages/buluo/buluo",
         "pages/index/index",
         "pages/search/search",
-        "pages/faqi/faqi",
-        "pages/me/me",
-        "pages/logs/logs"
+        "pages/logs/logs",
+        "pages/activity_detail/activity_detail",
+        "pages/signup_activity/faqi_activity",
+        "pages/faqi_activity/faqi_activity"
+
     ],
     "window": {
         "backgroundTextStyle": "dark",

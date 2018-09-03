@@ -1,27 +1,11 @@
-// pages/buluo/buluo.js
+// faqi_activity/faqi_activity.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    src: "../../res/buluo_top_bar.png",
-    activitys : [
-      {
-        orgnizer: "user1",
-        logo:"../../res/icon_buluo_select.png",
-        title:"title1",
-        level:"level1",
-        comment:"comment1"
-      },
-      {
-        orgnizer: "user2",
-        logo: "../../res/icon_buluo.png",
-        title: "title2",
-        level: "level2",
-        comment: "comment2"
-      }
-    ]
+
   },
 
   /**

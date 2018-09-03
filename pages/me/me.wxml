@@ -1,2 +1,12 @@
-<!--pages/me/me.wxml-->
-<text>pages/me/me.wxml</text>
+<view>
+<view class='UserInfo'>用户信息</view>
+{{concerns}} 关注
+{{fans}} 粉丝
+  <block wx:for="{{me_content}}">
+    <view>
+    {{item.content_logo}}
+    {{item.content_name}}
+    </view>
+  </block>
+
+</view>

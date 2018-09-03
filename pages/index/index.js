@@ -57,11 +57,26 @@ const app = getApp()
 Page({
   data: {
     imgUrls: [
-      '../../res/index_1.jpg',
-      '../../res/index_2.jpg',
-      '../../res/index_3.jpg',
-      '../../res/index_4.jpg',
-      '../../res/index_5.jpg'
+      {
+        logo: '../../res/index_1.jpg',
+        id: 1
+      },
+      {
+        logo: '../../res/index_2.jpg',
+        id: 2
+      },      
+      {
+        logo: '../../res/index_3.jpg',
+        id: 3
+      },
+      {
+        logo: '../../res/index_4.jpg',
+        id: 4
+      },
+      {
+        logo: '../../res/index_5.jpg',
+        id: 5
+      }      
     ],
     indicatorDots: true,
     autoplay: true,
@@ -94,6 +109,13 @@ Page({
   wxSearchTab: function () {
     wx.redirectTo({
       url: '../search/search'
+    })
+  },
+
+
+  activity_tap: function () {
+    wx.navigateTo({
+      url: '../activity_detail/activity_detail?id=2'
     })
   }
 })

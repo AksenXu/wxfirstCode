@@ -1,34 +1,20 @@
-// pages/buluo/buluo.js
+// pages/activity_detail/activity_detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    src: "../../res/buluo_top_bar.png",
-    activitys : [
-      {
-        orgnizer: "user1",
-        logo:"../../res/icon_buluo_select.png",
-        title:"title1",
-        level:"level1",
-        comment:"comment1"
-      },
-      {
-        orgnizer: "user2",
-        logo: "../../res/icon_buluo.png",
-        title: "title2",
-        level: "level2",
-        comment: "comment2"
-      }
-    ]
+    type:-1
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      type: options.id,
+    });
   },
 
   /**
@@ -78,5 +64,9 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  backBtn: function() {
+    wx.navigateBack()
   }
 })

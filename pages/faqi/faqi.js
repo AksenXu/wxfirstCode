@@ -62,5 +62,17 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+
+  release_activity_tap: function () {
+    wx.redirectTo({
+      url: '../faqi_activity/faqi_activity'
+    })
+  },
+  signup_activity_tap: function () {
+    wx.redirectTo({
+      url: '../signup_activity/faqi_activity'
+    })
+  },
+
 })

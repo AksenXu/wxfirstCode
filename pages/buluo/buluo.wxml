@@ -1,5 +1,19 @@
 <view class="container">
+
+<!-- FIXME：图片没有顶格在最上 -->
 <view class="top_bar">
         <image style="width: 400px; height: 200px; background-color: #eeeeee;" src="{{src}}"></image>
-      </view>
+</view>
+
+<view class="activity_view">
+  <block wx:for="{{activitys}}">
+    <view>
+    <image src="{{item.logo}}" style='width:30px; height:30px'></image>
+    {{item.orgnizer}} {{item.level}}
+    {{item.comment}}
+    {{item.title}}
+    </view>
+  </block>
+</view>
+
 </view>
