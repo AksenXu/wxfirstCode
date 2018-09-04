@@ -22,7 +22,10 @@ Page({
         content_logo: "",
         content_name: "联系客服"
       }
-      ]
+      ],
+    concerns : 1,
+    fans:2
+
   },
 
   /**

@@ -1,9 +1,9 @@
 {
     "pages": [
         "pages/me/me",
+        "pages/index/index",
         "pages/faqi/faqi",
         "pages/buluo/buluo",
-        "pages/index/index",
         "pages/search/search",
         "pages/logs/logs",
         "pages/activity_detail/activity_detail",

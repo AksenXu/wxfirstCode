@@ -1,12 +1,31 @@
 <view>
-<view class='UserInfo'>用户信息</view>
-{{concerns}} 关注
-{{fans}} 粉丝
+<view class="UserInfo">
+<view class="UserInfo.Title">
+用户信息
+</view>
+
+
+<view class="UserInfo.Fans">
+
+<view class="UserInfo.Fans.item">
+<view>{{concerns}}</view>
+<view>关注</view>
+</view>
+
+<view class="UserInfo.Fans.item">
+<view>{{fans}}</view>
+<view>粉丝</view>
+</view>
+
+<!-- end of UserInfo.Fans -->
+</view> 
+<!-- end of UserInfo.Title -->
+</view>
+
   <block wx:for="{{me_content}}">
     <view>
     {{item.content_logo}}
     {{item.content_name}}
     </view>
   </block>
-
 </view>
