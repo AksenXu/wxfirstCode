@@ -15,6 +15,17 @@ Page({
     this.setData({
       type: options.id,
     });
+
+    // wx.setStorage({
+    //   key: "test_09_10_key",
+    //   data: "test_09_10_value"
+    // })
+    wx.getStorage({
+      key: 'test_09_10_key',
+      success: function (res) {
+        console.log(res.data)
+      }
+    })
   },
 
   /**

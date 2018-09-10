@@ -1,4 +1,5 @@
 // pages/me/me.js
+const app = getApp()
 Page({
 
   /**
@@ -7,24 +8,32 @@ Page({
   data: {
     me_content: [
       {
-        content_logo: "",
-        content_name: "我的钱包"
+        content_logo: "../../res/me_wallet.png",
+        content_name: "我的钱包",
+        content_extra: "$0"
       },
       {
-        content_logo: "",
-        content_name: "我的收藏"
+        content_logo: "../../res/me_favor.png",
+        content_name: "我的收藏",
+        content_extra: ""
       }, 
       {
-        content_logo: "",
-        content_name: "常见问题"
+        content_logo: "../../res/me_qa.png",
+        content_name: "常见问题",
+        content_extra: ""
       },    
       {
-        content_logo: "",
-        content_name: "联系客服"
+        content_logo: "../../res/me_contact.png",
+        content_name: "联系客服",
+        content_extra: ""
       }
       ],
     concerns : 1,
-    fans:2
+    fans:2,
+    userInfo: {},
+    hasUserInfo: false,
+    canIUse: wx.canIUse('button.open-type.getUserInfo')
+
 
   },
 
@@ -32,7 +41,40 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+      if (app.globalData.userInfo) {
+      this.setData({
+        userInfo: app.globalData.userInfo,
+        hasUserInfo: true
+      })
+    } else if (this.data.canIUse){
+      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
+      // 所以此处加入 callback 以防止这种情况
+      app.userInfoReadyCallback = res => {
+        this.setData({
+          userInfo: res.userInfo,
+          hasUserInfo: true
+        })
+      }
+    } else {
+      // 在没有 open-type=getUserInfo 版本的兼容处理
+      wx.getUserInfo({
+        success: res => {
+          app.globalData.userInfo = res.userInfo
+          this.setData({
+            userInfo: res.userInfo,
+            hasUserInfo: true
+          })
+        }
+      })
+    }
+  },
+  getUserInfo: function(e) {
+    console.log(e)
+    app.globalData.userInfo = e.detail.userInfo
+    this.setData({
+      userInfo: e.detail.userInfo,
+      hasUserInfo: true
+    })
   },
 
   /**

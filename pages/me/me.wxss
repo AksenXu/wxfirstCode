@@ -1,12 +1,27 @@
 /* pages/me/me.wxss */
 .UserInfo {
   background-image:url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1536627057&di=31f383b8167f7b448e7a1834c6bfebf5&imgtype=jpg&er=1&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fblog%2F201407%2F24%2F20140724033342_53TeQ.thumb.700_0.jpeg");
-
+  height: 80px;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
 .UserInfo.Title {
   color: red;
-  font-size:44px;
+  height: 80px;
 }
 
 .UserInfo.Fans {
@@ -14,11 +29,16 @@
   font-size:22px;
   display:flex;
   flex-direction:row; 
+  justify-content: center;
+  width: 100;
 }
 
 .UserInfo.Fans.item {
-  color: white;
-  font-size:22px;
+  color: black;
+  font-size:15px;
   display:flex;
   flex-direction:column; 
+  justify-content: center;
+  font-family:"Times New Roman";
+  text-align:center;
 }

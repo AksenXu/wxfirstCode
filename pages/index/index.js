@@ -113,9 +113,12 @@ Page({
   },
 
 
-  activity_tap: function () {
+  activity_tap: function (event) {
+    var id = event.target.dataset['id'];
+    var activity_url = "../activity_detail/activity_detail?id=" + id;
+
     wx.navigateTo({
-      url: '../activity_detail/activity_detail?id=2'
+      url: activity_url
     })
   }
 })
