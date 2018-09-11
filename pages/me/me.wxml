@@ -14,13 +14,16 @@
 
 <view class="UserInfo.Fans">
 
-<view class="UserInfo.Fans.item" style="position:fixed;top:80px;left:80px;"
->
+<view class="UserInfo.Fans.item">
 <view>{{concerns}}</view>
 <view>关注</view>
 </view>
 
-<view class="UserInfo.Fans.item" style="position:fixed;top:80px;right:80px;">
+<view class="UserInfo.Fans.item">
+<view>|</view>
+</view>
+
+<view class="UserInfo.Fans.item">
 <view>{{fans}}</view>
 <view>粉丝</view>
 </view>
@@ -29,12 +32,22 @@
 </view> 
 <!-- end of UserInfo.Title -->
 </view>
-<view style="position:relative;top:100px;">
-  <block wx:for="{{me_content}}">
-    <view>
-    <image src="{{item.content_logo}}" stype="width=10px;height=10px"> </image>
+
+
+<view>
+ <view>
+  <scroll-view class="scroll" scroll-top="{{scrollTop}}" style="height:580px;" scroll-y="true" bindscroll="scrll"  bindscrolltolower="loadMore">
+   <view class="block" wx:for="{{me_content}}" wx:for-item="item">
+        <view class="me.item">
+    <image class="item.image" src="{{item.content_logo}}"> </image>
     {{item.content_name}}
     </view>
-  </block>
+
+   </view>  
+  </scroll-view>
+ </view>
+ <view class="top" hidden="{{hidden}}" catchtap="goTop">⇧</view>
 </view>
+
+
 </view>
