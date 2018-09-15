@@ -1,8 +1,24 @@
 <!--pages/faqi/faqi.wxml-->
-<view>
-共发起了活动 {{faqi_num}}次
-共参与了活动 {{canyu_num}}次
+<view class='view_faqi_top_bar'>
 
-<button bindtap='release_activity_tap'> 发布活动</button>
-<button bindtap='signup_activity_tap'> 报名记录</button>
+<view class='view_faqi_top_bar_detail'>
+<view class='view_faqi_top_bar_desc1'>共发起了活动 </view>
+<view class='view_faqi_top_bar_number'>{{faqi_num}} 次</view>
+
+<button bindtap='release_activity_tap' class='view_faqi_top_bar_fabu_button'> 
+<image src='{{fabu_image}}' class='view_faqi_top_bar_button_image'> </image>
+<view class='view_faqi_top_bar_button_text'>发布活动</view>
+</button>
+</view>
+
+<view class='view_faqi_top_bar_detail'>
+<view class='view_faqi_top_bar_desc1'>共参与了活动 </view>
+<view class='view_faqi_top_bar_number'>{{canyu_num}} 次</view>
+
+<button bindtap='signup_activity_tap' class='view_faqi_top_bar_jilu_button'> 
+<image src='{{jilu_image}}' class='view_faqi_top_bar_button_image'> </image>
+<view class='view_faqi_top_bar_button_text'>报名记录</view>
+</button>
+</view>
+
 </view>

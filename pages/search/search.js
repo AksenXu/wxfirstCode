@@ -27,17 +27,20 @@ Page({
   mySearchFunction: function (value) {
     // do your job here
     // 跳转
-    wx.redirectTo({
-      url: '../index/index?searchValue='+value
-    })
+    // wx.redirectTo({
+      // url: '../index/index?searchValue='+value
+    // })
   },
 
   // 返回回调函数
   myGobackFunction: function () {
     // do your job here
     // 跳转
-    wx.redirectTo({
-      url: '../index/index?searchValue=返回'  
+    // wx.redirectTo({
+      // url: '../index/index?searchValue=返回'  
+    // })
+    wx.navigateBack({
+      
     })
   }
 

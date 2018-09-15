@@ -1,1 +1,55 @@
 /* pages/faqi/faqi.wxss */
+.view_faqi_top_bar {
+  display: flex;
+  flex-direction: row;
+  background-color: #3f3a3a;
+  height: 350rpx;
+}
+
+.view_faqi_top_bar_detail {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+
+.view_faqi_top_bar_desc1 {
+  font-size: 15px; 
+  margin-top: 10px;
+  align-self: center;
+  font-weight: 200;
+  color: rgb(117, 116, 117)
+}
+
+.view_faqi_top_bar_number {
+  align-self: center;
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.view_faqi_top_bar_fabu_button {
+  display: flex;
+  flex-direction: row;
+  background-color:rgb(198, 20, 50);
+}
+
+.view_faqi_top_bar_jilu_button {
+  display: flex;
+  flex-direction: row;  
+  background-color:rgb(137, 186, 55);
+}
+
+.view_faqi_top_bar_button_text {
+  font-size: 15px;
+  color: white;
+  margin-left: 10px;
+  font-weight: 300;
+}
+
+.view_faqi_top_bar_button_image {
+  width: 30px;
+  height: 30px;
+  align-self: center
+}

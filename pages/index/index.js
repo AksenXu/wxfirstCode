@@ -107,7 +107,7 @@ Page({
   // }
 
   wxSearchTab: function () {
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../search/search'
     })
   },

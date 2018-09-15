@@ -1,6 +1,9 @@
 /* pages/me/me.wxss */
 .UserInfo {
-  background-image:url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1536627057&di=31f383b8167f7b448e7a1834c6bfebf5&imgtype=jpg&er=1&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fblog%2F201407%2F24%2F20140724033342_53TeQ.thumb.700_0.jpeg");
+  background-color: #3f3a3a;
+  height: 250rpx;
+
+  /* background-image:url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1536627057&di=31f383b8167f7b448e7a1834c6bfebf5&imgtype=jpg&er=1&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fblog%2F201407%2F24%2F20140724033342_53TeQ.thumb.700_0.jpeg"); */
   /* height: 80px; */
 }
 .userinfo {
@@ -35,8 +38,6 @@
 }
 
 .UserInfo.Fans.item {
-  color: black;
-  font-size:15px;
   display:flex;
   flex-direction:column; 
   justify-content: center;
@@ -44,14 +45,41 @@
   text-align:center;
 }
 
-.me.item {
+.user_info_fans_text {
+  color: white;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.me_detail {
   display: flex;
-  width: 90%;
-  height: 150rpx;
+  flex-direction: column;
+  margin-top: 250rpx;
+}
+
+.me.item {
+  margin-left: 10%;
+  width: 80%;
+  height: 120rpx;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rpx;
+  align-items: center;
   border-bottom:1px solid rgb(224, 221, 221)
 }
+
 .item.image {
-  width: 100rpx;
-  height: 100rpx;
-  
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.item.text {
+  font-size: 13px;
+  font-weight: 300;
+  margin-left: 40rpx;
+}
+
+.item_text_detail {
+  position: fixed;
+  right: 10%;
 }

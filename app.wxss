@@ -8,3 +8,24 @@
   /* padding: 200rpx 0; */
   box-sizing: border-box;
 } 
+
+
+.weui-cell__ft_in-access {
+  position:relative; 
+  align-items: center;
+  align-content: center
+}
+
+.weui-cell__ft_in-access:after {
+  content:" ";
+  display:inline-block;
+  height:6px;width:6px;
+  border-width:2px 2px 0 0;
+  border-color:#c8c8cd;
+  border-style:solid;
+  -webkit-transform:matrix(.71,.71,-.71,.71,0,0);
+  transform:matrix(.71,.71,-.71,.71,0,0);
+  position: relative;
+  right:20px
+}
+

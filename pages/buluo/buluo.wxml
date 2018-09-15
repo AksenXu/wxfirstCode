@@ -1,18 +1,21 @@
-<view class="container">
+<view class="container" style='background-color:rgb(247, 247, 247);'>
 
-<!-- FIXME：图片没有顶格在最上 -->
 <view class="top_bar">
-        <image style="width: 400px; height: 200px; background-color: #eeeeee;" src="{{src}}"></image>
+  <image style="width: 400px; height: 200px;" src="{{src}}"></image>
 </view>
 
-<view class="activity_view">
-  <block wx:for="{{activitys}}">
-    <view>
-    <image src="{{item.logo}}" style='width:30px; height:30px'></image>
-    {{item.orgnizer}} {{item.level}}
-    {{item.comment}}
-    {{item.title}}
+<view class="buluo_activity_view">
+  <block class="buluo_activity_view_item" wx:for="{{activitys}}">
+    <view class='buluo_activity_view_line1'>
+    <image src="{{item.logo}}" class='buluo_activity_view_line1_image'></image>
+    <view class='buluo_activity_view_line1_comment'>
+    <view class='buluo_activity_view_line1_user'>{{item.orgnizer}} 
+    <image class='buluo_activity_view_line1_user_level' src="{{item.level}}"></image>
     </view>
+    <view class='buluo_activity_view_line1_extra'>发起了{{item.number}}个活动获得￥{{item.money}}赏金</view>
+    </view>
+    </view>
+    <view class='buluo_activity_view_line2'>{{item.title}}</view>
   </block>
 </view>
 

@@ -28,17 +28,22 @@
 <slider bindchange="durationChange" show-value min="1000" max="10000"/> duration -->
 
 <view class="search-area">
-<icon class="choose_area_button" type="search" size="14"></icon>
-<input type="text" class="weui-search-bar__input"  disabled='true' placeholder="搜索入口" bindtap="wxSearchTab"/>
+<view class='weui-cell__ft_in-access-pulldown'></view>
+<view class='vertical-line'></view>
 
+<input type="text" class="weui-search-bar__input"  disabled='true' placeholder="去发现运动结识伙伴吧!" bindtap="wxSearchTab"/>
+<icon class="choose_area_button" type="search" size="14"></icon>
 </view>
-<view class="btn-area">
-  <view class="allaction-view">
+
+
+<view class="bottom-bar-button">
+  <view class="all-action-text-view">
     <text>{{allaction}}</text>
   </view>
-  <view class="actionfilter-view">
+  <view class="action-filter-button">
     <text>{{actionfilter}}</text>
   </view>
+  <view class='weui-cell__ft_in-access'></view>
 </view>
 
 </view>

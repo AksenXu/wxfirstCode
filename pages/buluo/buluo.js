@@ -8,18 +8,20 @@ Page({
     src: "../../res/buluo_top_bar.png",
     activitys : [
       {
-        orgnizer: "user1",
+        orgnizer: "松松松",
         logo:"../../res/icon_buluo_select.png",
-        title:"title1",
-        level:"level1",
-        comment:"comment1"
+        title:"周五开放赛一场!",
+        level: "../../res/buluo_level.png",
+        number: 1,
+        money: 7
       },
       {
-        orgnizer: "user2",
+        orgnizer: "紧紧紧",
         logo: "../../res/icon_buluo.png",
-        title: "title2",
-        level: "level2",
-        comment: "comment2"
+        title: "周六又一场!",
+        level: "../../res/buluo_level.png",
+        number:2,
+        money:14
       }
     ]
   },

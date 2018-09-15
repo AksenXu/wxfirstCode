@@ -5,7 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    faqi_num: 1,
+    canyu_num: 2,
+    fabu_image: "../../res/buluo_fabu_button_image.png",
+    jilu_image: "../../res/buluo_canyu_button_image.png",
   },
 
   /**
